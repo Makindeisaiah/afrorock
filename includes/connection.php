@@ -1,7 +1,8 @@
+
 <?php
 // Database Connection variables 
 
-// echo $_SERVER['HTTP_HOST'];
+echo $_SERVER['HTTP_HOST'];
 
 if ($_SERVER['HTTP_HOST'] == 'localhost') {
     $db_host = "localhost";
@@ -11,7 +12,7 @@ if ($_SERVER['HTTP_HOST'] == 'localhost') {
 } 
 
 // Create Connection to database
-$conn =  mysqli_connect($db_host, $db_user, $db_password, $db_name);
+$conn = mysqli_connect($db_host, $db_user, $db_password, $db_name);
 
 // Check connection
 if (!$conn) {
